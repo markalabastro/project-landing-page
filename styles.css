@@ -1,0 +1,20 @@
+/* Sets box-sizing to border-box of elements */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 80vw;
+  margin: auto;
+}
+
+header {
+  background-color: #1f2947;
+  display: flex;
+  justify-content: space-between;
+}
