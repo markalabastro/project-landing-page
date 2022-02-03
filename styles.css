@@ -8,11 +8,12 @@ html {
   box-sizing: inherit;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300&display=swap");
 
 body {
   margin: auto;
   font-family: "Roboto", sans-serif;
+  min-width: 1000px;
 }
 
 header {
@@ -38,7 +39,7 @@ header {
   border-radius: 50%;
   height: 50px;
   width: 50px;
-  margin: 0px 10px;
+  margin: 0px 20px;
 }
 
 .logo-container {
@@ -48,7 +49,11 @@ header {
   align-items: center;
 }
 
-.main-info {
+.hero {
+  display: flex;
+  background-color: #1f2937;
+  justify-content: space-between;
+  padding: 50px 15%;
 }
 
 h1 {
@@ -58,16 +63,15 @@ h1 {
   margin: 0px;
 }
 
-.hero {
-  display: flex;
-  background-color: #1f2937;
-  justify-content: space-between;
-  padding: 50px 15%;
-}
-
 .main-p {
   padding: 10px 10px 10px 0px;
   color: #f9faf8;
+}
+
+.main-image {
+  max-width: 100%;
+  height: auto;
+  flex: 1 1 auto;
 }
 
 h2 {
@@ -75,18 +79,22 @@ h2 {
 }
 
 .features {
-  height: 300px;
+  padding: 0px 15%;
 }
 
 .features-info {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .card {
-  margin: 0px 50px;
+  /* margin: 0px 50px; */
   text-align: center;
-  width: 150px;
+  /* width: 150px;  */
+}
+
+.feature-p {
+  width: 200px;
 }
 
 .signup-1 {
@@ -100,18 +108,22 @@ h2 {
 
 .quote {
   background-color: #e5e7eb;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .quote-p {
   font-size: 36px;
   font-style: italic;
   font-weight: 100;
-  padding: 5% 10%;
+  padding: 5% 15%;
 }
 
 .quote-span {
+  display: block;
   font-size: 20px;
+  font-weight: 900;
+  text-align: right;
 }
 
 .feature-icon-1 {
@@ -125,4 +137,46 @@ h2 {
 }
 .feature-icon-4 {
   color: #3f37c9;
+}
+
+.sign-up {
+  background-color: white;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign-up-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #3882f6;
+  border-radius: 5px;
+  height: 100px;
+  width: 70%;
+  color: #f9faf8;
+}
+
+.fineprint {
+  display: block;
+}
+
+.signup-2-button {
+  color: white;
+  border: 1px solid white;
+  background-color: #3882f6;
+  width: 80px;
+  height: auto;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  background-color: #1f2937;
+  height: 100px;
+  line-height: 100px;
+  color: #f9faf8;
 }
